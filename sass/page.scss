@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::selection {
+    background-color: $mainColor;
+    color: $secondaryColor;
+}
+
+body {
+    background-color: $mainColor;
+    color: $secondaryColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    font-family: "Squada One", cursive;
+    letter-spacing: 2px;
+    background: linear-gradient(270deg, $mainColor, #1e1e24);
+    background-size: 400% 400%;
+    animation: AnimationYan 31s ease infinite;
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow: hidden;
+}
+/*# sourceMappingURL=main.css.map */
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    @media screen and (min-width: 560px) {
+        font-size: 3.5rem;
+    }
+    @media screen and (min-width: 768px) {
+        font-size: 5rem;
+    }
+}
+
+h2 {
+    font-size: 1.5rem;
+    @media screen and (min-width: 560px) {
+        font-size: 2.5rem;
+    }
+    @media screen and (min-width: 768px) {
+        font-size: 3rem;
+    }
+}
+
+@-webkit-keyframes AnimationYan {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+@-moz-keyframes AnimationYan {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+@keyframes AnimationYan {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.rs {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    li {
+        margin-right: 10px;
+        @media screen and (min-width: 768px) {
+            margin-right: 20px;
+        }
+        a {
+            color: $secondaryColor;
+            display: block;
+            text-decoration: none;
+            transform: all 0.3s ease-in;
+            &:hover {
+                color: $mainColor;
+            }
+            i {
+                font-size: 1rem;
+                @media screen and (min-width: 768px) {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    margin-top: 50px;
+}

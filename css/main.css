@@ -1,68 +1,197 @@
-* {
-    margin: 0;
-    padding: 0;
+@charset "UTF-8";
+@font-face {
+  font-family: "yan";
+  src: url("../fonts/yan.eot?zeb4zq");
+  src: url("../fonts/yan.eot?zeb4zq#iefix") format("embedded-opentype"), url("../fonts/yan.ttf?zeb4zq") format("truetype"), url("../fonts/yan.woff?zeb4zq") format("woff"), url("../fonts/yan.svg?zeb4zq#yan") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
 }
-body {
-    background-color: #e54b4b;
-    color: #f7ebe8;
-    display: -ms-grid;
-    display: grid;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    height: 100vh;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    width: 100%;
-    text-align: center;
-    font-family: "Squada One", cursive;
-    letter-spacing: 2px;
-    background: linear-gradient(270deg, #e54b4b, #1e1e24);
-    background-size: 400% 400%;
-    animation: AnimationYan 31s ease infinite;
-}
-/*# sourceMappingURL=main.css.map */
 
+[class^="yan-"], [class*=" yan-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "yan" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.yan-facebook:before {
+  content: "";
+}
+
+.yan-twitter:before {
+  content: "";
+}
+
+.yan-youtube2:before {
+  content: "";
+}
+
+.yan-github:before {
+  content: "";
+}
+
+.yan-wordpress:before {
+  content: "";
+}
+
+.yan-linkedin2:before {
+  content: "";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+::-moz-selection {
+  background-color: #e54b4b;
+  color: #f7ebe8;
+}
+
+::selection {
+  background-color: #e54b4b;
+  color: #f7ebe8;
+}
+
+body {
+  background-color: #e54b4b;
+  color: #f7ebe8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  text-align: center;
+  font-family: "Squada One", cursive;
+  letter-spacing: 2px;
+  background: -webkit-gradient(linear, right top, left top, from(#e54b4b), to(#1e1e24));
+  background: linear-gradient(270deg, #e54b4b, #1e1e24);
+  background-size: 400% 400%;
+  -webkit-animation: AnimationYan 31s ease infinite;
+          animation: AnimationYan 31s ease infinite;
+  padding-left: 15px;
+  padding-right: 15px;
+  overflow: hidden;
+}
 h1 {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+}
+
+@media screen and (min-width: 560px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
     font-size: 5rem;
+  }
 }
 
 h2 {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 560px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h2 {
     font-size: 3rem;
+  }
 }
 
 @-webkit-keyframes AnimationYan {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
-@-moz-keyframes AnimationYan {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
+
 @keyframes AnimationYan {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
+
+.rs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+}
+
+.rs li {
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .rs li {
+    margin-right: 20px;
+  }
+}
+
+.rs li a {
+  color: #f7ebe8;
+  display: block;
+  text-decoration: none;
+  -webkit-transform: all 0.3s ease-in;
+          transform: all 0.3s ease-in;
+}
+
+.rs li a:hover {
+  color: #e54b4b;
+}
+
+.rs li a i {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .rs li a i {
+    font-size: 3rem;
+  }
+}
+
+.footer {
+  margin-top: 50px;
+}
+/*# sourceMappingURL=main.css.map */
